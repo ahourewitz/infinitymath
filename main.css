@@ -34,7 +34,7 @@ nav {
     text-align: center;
 }
 nav ul li {
-   display: inline-block;
+   display: table-cell;
     list-style-type: none;
 }
 nav ul li a{
@@ -42,7 +42,7 @@ nav ul li a{
     margin: 0.5rem;
     padding: 0.4rem 0;
     min-width: 150px;
-    justify-content: flex-end;
+    justify-content: center;
     text-align: center;
     color : aqua;
     background-color: hotpink;
@@ -55,3 +55,25 @@ nav ul li a:hover{
     color: cadetblue;
     border-color: antiquewhite;
 }
+nav li ul{
+    display: none;
+    height : auto;
+    margin: 0;
+    padding: 0;
+}
+nav li ul li{
+    display: table;
+    height : auto;
+    margin: 0;
+    padding: 0;
+}
+nav li ul li ul{
+    display: table-cell;
+    height : auto;
+    margin: 0;
+    padding: 0;
+}
+nav li:hover ul{
+    display: block;
+}
+
