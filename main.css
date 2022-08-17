@@ -1,24 +1,22 @@
 h1 {
-    font-size: 50pt;
+    color: white;
     font-weight: bold;
-    text-align: center;
-    margin: 0;
-    color: #69003F;
-    text-shadow: 0px 2px #FF2F8A;
+    font-family :'Roboto',sans-serif ;
+    font-size: 12pt;
+    font-weight: bold;
 }
-h2 {
-    font-size:25pt ;
-    font-weight: 500 ;
-    text-align: center;
-    margin: 0;
-    color: #4D006C;
-    font-family: ;
+h2{
+    color: #ff7a01;
+    font-size: 18pt;
+    text-align: left;
+    font-family :'Roboto',sans-serif ;
 }
+
 h3 {
-    font-size: 16pt;
+    font-size: 20pt;
     font-weight: 900;
     text-align: center;
-    color: #FF2F8A;
+    color: #fe513d;
     font-family :'Roboto',sans-serif ;
 }
 p{
@@ -30,8 +28,16 @@ p{
     padding-right: 50pt;
     font-family :'Roboto',sans-serif ;
 }
-nav {
+
+footer{
+    background-color: #FF2F8A;
     text-align: center;
+    padding: 3px ;
+}
+
+nav ul{
+    width: 60%;
+    margin: 0 auto;
 }
 nav ul li {
    display: table-cell;
@@ -42,18 +48,24 @@ nav ul li a{
     margin: 0.5rem;
     padding: 0.4rem 0;
     min-width: 150px;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: center;
-    color : aqua;
-    background-color: hotpink;
+    color : #000000;
+    background-color: #FF2F8A;
+    font-family :'Roboto',sans-serif ;
+    font-size: 12pt;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 4px;
     transition: all 1s;
 }
 nav ul li a:hover{
-    background-color: lightpink;
-    color: cadetblue;
-    border-color: antiquewhite;
+    background-color: #ff7a01;
+    color: #000000;
+    font-family :'Roboto',sans-serif ;
+    font-size: 12pt;
+    font-weight: bold;
+    border-color: #fe513d;
 }
 nav li ul{
     display: none;
@@ -76,4 +88,11 @@ nav li ul li ul{
 nav li:hover ul{
     display: block;
 }
+
+div#box1 div.Article-Home{
+    margin: 8px;
+    border-bottom: thick double #FF2F8A;
+
+}
+
 
