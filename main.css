@@ -3,7 +3,6 @@ h1 {
     font-weight: bold;
     font-family :'Roboto',sans-serif ;
     font-size: 12pt;
-    font-weight: bold;
 }
 h2{
     color: #ff7a01;
@@ -20,8 +19,8 @@ h3 {
     font-family :'Roboto',sans-serif ;
 }
 p{
-    font-size: 12pt;
-    font-weight: 300;
+    font-size: 14pt;
+    font-weight: 900;
     text-align: justify;
     color: #000000;
     padding-left: 50pt;
@@ -30,7 +29,7 @@ p{
 }
 
 footer{
-    background-color: #FF2F8A;
+    background-image: linear-gradient(#FF2F8A,#ff8b94) ;
     text-align: center;
     padding: 3px ;
 }
@@ -88,11 +87,32 @@ nav li ul li ul{
 nav li:hover ul{
     display: block;
 }
-
+div.Article-Home img{
+    padding-left: 22%;
+}
+div.rightbox img{
+    padding-left: 28%;
+}
+div.rightbox p{
+    padding-top: 8%;
+}
+div#box1{
+    padding-left: 100px;
+    padding-right: 100px;
+}
 div#box1 div.Article-Home{
     margin: 8px;
     border-bottom: thick double #FF2F8A;
-
+}
+div#box1 div.Article-Home div.type1 div{
+    display: inline-block;
+    width: 48%;
+}
+div#box1 div.Article-Home div.leftbox{
+    vertical-align: top;
+}
+div#box1 div.Article-Home div.rightbox{
+    vertical-align: top;
 }
 
 
