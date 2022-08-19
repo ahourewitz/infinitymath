@@ -1,5 +1,5 @@
 <div style="text-align: center">
-    <img src="img/title.jpeg" width="80%">
+    <img src="img/title1.jpeg" width="60%">
 </div>
 <div style="text-align: right">
     <a href="https://www.facebook.com"><img src="img/facebook.png" width="30"></a>
@@ -34,10 +34,20 @@
                     DIGITAL
                 </a>
             </li>
-            <li>
-                <a href="newsletter.html">
+            <li onclick="OpenModal()">
+                <a href="#">
                     NEWSLETTER
                 </a>
             </li>
         </ul>
     </nav>
+<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
+        <h3>Want to subscribe to the newsletter ?</h3>
+        <input placeholder="Email Address">
+        <button>Sign up for more !</button>
+        <br>
+        <img src="img/facebook.png">
+    </div>
+</div>
