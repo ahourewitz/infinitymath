@@ -25,7 +25,7 @@ function loadArticles(category, articles) {
     const body = document.body,
         tbl = document.createElement('table');
     tbl.className = 'article_table'
-    outer: for (let i = 0; i < 3; i++) {
+    outer: for (let i = 0; i < 100; i++) {
         const tr = tbl.insertRow();
         for (let j = 0; j < col_max; j++) {
             const td = tr.insertCell();
@@ -36,7 +36,6 @@ function loadArticles(category, articles) {
             td.appendChild(
                 createArticleCard('articles/'+category+'/'+articles[i * col_max + j])
             );
-            td.style.border = '1px solid black';
         }
     }
     body.appendChild(tbl);
