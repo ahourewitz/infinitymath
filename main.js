@@ -20,24 +20,18 @@ function CloseModal() {
 
 }
 
-function loadArticles(category) {
-    col_max = 3
+function loadArticles(category, articles) {
+    let col_max = 3
     const body = document.body,
         tbl = document.createElement('table');
     tbl.className = 'article_table'
-    articles = ['20220821.grade6.intro', '20220822.grade6.intro2']
-    fillTable(tbl, articles, category)
-    body.appendChild(tbl);
-}
-
-function fillTable(tbl, articles, category) {
-    for (let i = 0; i < 3; i++) {
+    outer: for (let i = 0; i < 3; i++) {
         const tr = tbl.insertRow();
         for (let j = 0; j < col_max; j++) {
             const td = tr.insertCell();
             td.style.width = 100/col_max + '%'
             if (i * col_max + j >= articles.length) {
-                return
+                break outer
             }
             td.appendChild(
                 createArticleCard('articles/'+category+'/'+articles[i * col_max + j])
@@ -45,6 +39,7 @@ function fillTable(tbl, articles, category) {
             td.style.border = '1px solid black';
         }
     }
+    body.appendChild(tbl);
 }
 
 function createArticleCard(filename){
