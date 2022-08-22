@@ -153,5 +153,15 @@ div#box1 div.Article-Home div.rightbox{
 .CloseIcon{
     cursor: pointer;
 }
-
-
+.article_poster{
+    width: 100%;
+    /*height: 100%;*/
+    /*margin: 0 auto;*/
+    /*text-align: right;*/
+    /*display: block;*/
+}
+.article_table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

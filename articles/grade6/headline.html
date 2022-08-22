@@ -1,0 +1,53 @@
+<div style="text-align: center">
+    <img src="../../img/title1.jpeg" width="60%">
+</div>
+<div style="text-align: right">
+    <a href="https://www.facebook.com"><img src="../../img/facebook.png" width="30"></a>
+    <a href="https://www.in.com"><img src="../../img/instagram.png" width="30"></a>
+    <a href="https://www.pin.com"><img src="../../img/pinterest.png" width="30"></a>
+    <a href="https://www.you.com"><img src="../../img/youtube.png" width="30"></a>
+</div>
+    <nav>
+        <ul>
+            <li>
+                <a href="../../index.html">
+                    HOME
+                </a>
+            </li>
+            <li class="menu-deroulant">
+                <a href="#">
+                    MIDDLE SCHOOL
+                </a>
+                <ul class="sous-menu">
+                    <li><a href="../../grade6.html">Grade 6</a> </li>
+                    <li><a href="../../grade7.html">Grade 7</a> </li>
+                    <li><a href="../../grade8.html">Grade 8</a> </li>
+                </ul>
+            </li>
+            <li>
+                <a href="../../teacherpaper.html">
+                    TEACHER PAPER
+                </a>
+            </li>
+            <li>
+                <a href="../../digital.html">
+                    DIGITAL
+                </a>
+            </li>
+            <li onclick="OpenModal()">
+                <a href="#">
+                    NEWSLETTER
+                </a>
+            </li>
+        </ul>
+    </nav>
+<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
+        <h3>Want to subscribe to the newsletter ?</h3>
+        <input placeholder="Email Address">
+        <button>Sign up for more !</button>
+        <br>
+        <img src="../../img/facebook.png">
+    </div>
+</div>
